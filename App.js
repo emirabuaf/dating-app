@@ -20,7 +20,7 @@ const App = createAppContainer(createSwitchNavigator(
       screen:createBottomTabNavigator({
         profile:{screen:ProfileScreen},
         cards:{screen:CardsScreen},
-        matches:{screen:MatchesScreen}
+        matches:{screen:MatchesScreen},
       })
     }
   },

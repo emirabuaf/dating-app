@@ -11,7 +11,7 @@ export default class SignUp extends React.Component {
     .then((res) => {
     firebase.database().ref('users/' + res.user.uid).set({
         email:this.state.email,
-        name:this.state.name
+        name:this.state.name,
     })
   })
   .catch(error => this.setState({ errorMessage: error.message }))
